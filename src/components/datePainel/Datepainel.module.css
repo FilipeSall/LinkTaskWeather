@@ -1,0 +1,157 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 40vw;
+    height: 55vh;
+    border-radius: 8px;
+    padding: 1rem;
+    user-select: none;
+    background-color: var(--papaya);
+    color: var(--black);
+    box-shadow: 0px 1px 0px var(--black);
+    overflow-y: scroll;
+}
+
+.container::-webkit-scrollbar {
+    width: 1px;
+}
+
+.dateWrapper {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.day,
+.date {
+    font-family: 'montserrat', sans-serif;
+}
+
+.day {
+    font-size: 3rem;
+}
+
+.date {
+    font-size: 1.8rem;
+    color: var(--grey);
+}
+
+.icon {
+    font-size: 2rem;
+    border-radius: 8px;
+    padding: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--orange);
+}
+
+.dateSeparator {
+    margin: 8px auto;
+    border: none;
+    border-top: 1px solid var(--lowRed);
+    width: 50%;
+}
+
+.dot {
+    color: var(--red);
+    font-weight: bolder;
+    font-size: 2rem;
+    margin: 0 4px;
+}
+
+.specDateContainer {
+    display: flex;
+    margin: 12px 0;
+    font-weight: normal;
+    align-items: center;
+    gap: 8px;
+    background-color: var(--white);
+    box-shadow: 0 1px 1px black;
+    padding: 12px;
+    border-radius: 8px;
+    color: var(--black);
+}
+
+.specDateContainer>h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+}
+
+.noTodo {
+    display: flex;
+    margin: 12px 0;
+    font-weight: normal;
+    align-items: center;
+    gap: 8px;
+    padding: 12px;
+    color: var(--grey);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+}
+
+.todo {
+    display: flex;
+    margin: 12px 0;
+    font-weight: normal;
+    align-items: center;
+    gap: 8px;
+    background-color: var(--linen);
+  
+    padding: 12px;
+    border-radius: 8px;
+    color: var(--grey);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    justify-content: space-between;
+    animation: slide-in 0.5s ease-in-out;
+}
+
+.todoicon {
+    color: var(--red);
+    font-size: 2rem;
+}
+
+.trashBtn {
+    background-color: var(--red);
+    color: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    width: 3vw;
+    height: 5vh;
+    border: none;
+    border-radius: 8px;
+}
+
+.todoIconTxt {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+}
+
+@keyframes slide-in {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media screen and (max-width:768px) {
+    .container {
+        width: 98%;
+        margin: 12px 0;
+        height: fit-content;
+    }
+
+    .specDateContainer>h1 {
+        font-size: 1rem;
+    }
+}

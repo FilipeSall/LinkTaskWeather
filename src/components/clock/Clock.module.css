@@ -1,0 +1,28 @@
+.container{
+    font-family: roboto, sans-serif;
+    color: var(--white);
+    user-select: none;
+   
+}
+
+.clock{
+    width: 10vw;
+    height: 6vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    padding: 0.3rem;
+    gap: 12px;
+    transition: all 0.3s ease-in-out;
+    min-width: fit-content;
+}
+
+@media screen and (max-width:1000px) {
+   .clock-container{
+    display: none;
+   }
+   .clock{
+    display: none;
+   }
+}

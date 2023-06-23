@@ -1,0 +1,148 @@
+.shortcut__img_container{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 40%;
+    width: 33%;
+    border-radius: 4px;
+    transition: .3s ease;
+    text-align: center;
+}
+
+
+.nav__container {
+    display: flex;
+    user-select: none;
+    font-family: "Montserrat", sans-serif;
+    background-color: #161119;
+    color: #fff;
+    padding: 10px;
+    animation: animeLeft 0.3s forwards ease;
+    height: 50%;
+    gap: 8px;
+    width: 100%;
+    max-width: 100%;
+  }
+  
+  .links__nav_container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 4px;
+  }
+
+  .shortcut_title{
+    transition: animeLeft .3s ease;
+  }
+  
+  .shortcut__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: var(--white);
+    font-weight: bolder;
+    text-shadow: 2px 2px 2px var(--black);
+    height: 20vh;
+    padding: 10px;
+    width: 100%;
+    transition: .3s ease;
+  }
+
+  .shortcut__container:hover {
+    background: rgba(255, 255, 255, 0.542);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    transition: .3s ease;
+    cursor: pointer;
+  }
+
+  .invisible {
+    display: none;
+  }
+  
+  .shortcut_text {
+    animation: animeLeft .3s ease;
+    color: var(--black);
+    text-shadow: none;
+    font-weight: 900;
+    font-size: 1.2rem;
+    font-family: 'montserrat';
+
+  }
+  
+
+  @keyframes animeLeft {
+    0% {
+      opacity: 0;
+      transform: translateX(-10px);
+    }
+  
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .nav__container {
+      height: 50%;
+      justify-content: space-around;
+    }
+  
+  }
+.coolors {
+    background-image: url(../../../public/shortcuts_imgs/coolors.webp);
+}
+
+.svgrepo{
+    background-image: url(../../../public/shortcuts_imgs/svgrepo.webp);
+}
+
+.removebg{
+    background-image: url(../../../public/shortcuts_imgs/removebg.webp);
+}
+
+.squoosh{
+    background-image: url(../../../public/shortcuts_imgs/squoosh.webp);
+}
+
+.formik{
+    background-image: url(../../../public/shortcuts_imgs/formik.webp);
+}
+
+.reacticons{
+    background-image: url(../../../public/shortcuts_imgs/reacticons.webp);
+}
+
+.toastify{
+    background-image: url(../../../public/shortcuts_imgs/toastify.webp);
+}
+
+.router{
+    background-image: url(../../../public/shortcuts_imgs/router.webp);
+}
+
+.robo3t{
+  background-image: url(../../../public/shortcuts_imgs/robo3t.webp);
+}
+
+.lexica{
+  background-image: url(../../../public/shortcuts_imgs/lexica.webp);
+}
+
+.looka{
+  background-image: url(../../../public/shortcuts_imgs/looka.webp);
+}
+
+@media screen and (max-width:768px) {
+    .shortcut__img-container{
+       height: 30vh;
+       width: 90vw;
+    }
+}

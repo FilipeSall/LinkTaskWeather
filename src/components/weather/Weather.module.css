@@ -1,0 +1,137 @@
+.container {
+    width: 40vw;
+    height: 55vh;
+    border-radius: 8px;
+    position: relative;
+    user-select: none;
+    box-shadow: 0px 1px 2px var(--black);
+  }
+  
+  .weatherWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: var(--preto);
+    height: 100%;
+  }
+  
+  .weatherImg {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: absolute;
+    border-radius: 10px;
+  }
+  
+  .weatherAnimation {
+    object-fit: contain;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .weatherInfo {
+    display: flex;
+    flex-direction: column;
+    height: 90%;
+    align-items: center;
+    justify-content: center;
+    width: 70%;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.32);
+  }
+  
+  .cityName {
+    font-size: 3rem;
+  }
+  
+  .temperature {
+    font-size: 2rem;
+  }
+  
+  .humidity {
+    font-size: 2rem;
+  }
+  
+  .weatherDescription {
+    text-transform: capitalize;
+    font-size: 1.5rem;
+  }
+  
+  .weatherStatus {
+    width: 100%;
+    word-wrap: break-word;
+    height: fit-content;
+    height: 100%;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    gap: 4px;
+  }
+  
+  .loadingContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    font-size: 3rem;
+    gap: 10px;
+  }
+  
+  .errorContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+    background-color: #f2f2f2;
+    font-family: "Open Sans", sans-serif;
+  }
+  
+  .faSpinner {
+    font-size: 40px;
+  }
+  
+  .faPulse {
+    animation: fa-spin 1.5s infinite linear;
+  }
+  
+  @keyframes fa-spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .container {
+      width: 100vw;
+      height: 70vh;
+      border-radius: 0;
+    }
+    .weatherInfo {
+      width: 80vw;
+      backdrop-filter: blur(15px);
+      -webkit-backdrop-filter: blur(15px);
+    }
+    .weatherImg {
+      border-radius: 0;
+    }
+  }
