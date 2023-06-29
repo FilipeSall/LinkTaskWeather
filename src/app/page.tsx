@@ -1,7 +1,7 @@
 import styles from './page.module.css'
-import Weather from '@/components/weather/Weather'
-import DatePainel from '@/components/datePainel/DatePainel'
-import Todomanager from '@/components/todoManager/Todomanager'
+import Weather from './components/weather/Weather'
+import DatePainel from './components/datePainel/DatePainel'
+import Todomanager from './components/todoManager/Todomanager'
 
 export default function Home() {
   return (

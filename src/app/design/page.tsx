@@ -1,5 +1,5 @@
 import React from 'react';
-import Shortcut from '../../components/shortcuts/Shortcut';
+import Shortcut from '../components/shortcuts/Shortcut';
 
 function index() {
 

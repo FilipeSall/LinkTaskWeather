@@ -97,47 +97,47 @@
   
   }
 .coolors {
-    background-image: url(../../../public/shortcuts_imgs/coolors.webp);
+    background-image: url(../../../../public/shortcuts_imgs/coolors.webp);
 }
 
 .svgrepo{
-    background-image: url(../../../public/shortcuts_imgs/svgrepo.webp);
+    background-image: url(../../../../public/shortcuts_imgs/svgrepo.webp);
 }
 
 .removebg{
-    background-image: url(../../../public/shortcuts_imgs/removebg.webp);
+    background-image: url(../../../../public/shortcuts_imgs/removebg.webp);
 }
 
 .squoosh{
-    background-image: url(../../../public/shortcuts_imgs/squoosh.webp);
+    background-image: url(../../../../public/shortcuts_imgs/squoosh.webp);
 }
 
 .formik{
-    background-image: url(../../../public/shortcuts_imgs/formik.webp);
+    background-image: url(../../../../public/shortcuts_imgs/formik.webp);
 }
 
 .reacticons{
-    background-image: url(../../../public/shortcuts_imgs/reacticons.webp);
+    background-image: url(../../../../public/shortcuts_imgs/reacticons.webp);
 }
 
 .toastify{
-    background-image: url(../../../public/shortcuts_imgs/toastify.webp);
+    background-image: url(../../../../public/shortcuts_imgs/toastify.webp);
 }
 
 .router{
-    background-image: url(../../../public/shortcuts_imgs/router.webp);
+    background-image: url(../../../../public/shortcuts_imgs/router.webp);
 }
 
 .robo3t{
-  background-image: url(../../../public/shortcuts_imgs/robo3t.webp);
+  background-image: url(../../../../public/shortcuts_imgs/robo3t.webp);
 }
 
 .lexica{
-  background-image: url(../../../public/shortcuts_imgs/lexica.webp);
+  background-image: url(../../../../public/shortcuts_imgs/lexica.webp);
 }
 
 .looka{
-  background-image: url(../../../public/shortcuts_imgs/looka.webp);
+  background-image: url(../../../../public/shortcuts_imgs/looka.webp);
 }
 
 @media screen and (max-width:768px) {

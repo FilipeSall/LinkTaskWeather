@@ -1,11 +1,11 @@
 "use client";
-
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import { FaTint, FaThermometerHalf, FaCloud } from "react-icons/fa";
 import { AiOutlineLoading3Quarters } from "react-icons/ai";
 import { BiErrorAlt } from "react-icons/bi";
 import styles from './Weather.module.css';
+import Image from "next/image";
 
 interface WeatherData {
     weather: {
@@ -96,13 +96,13 @@ const Weather = () => {
             case "Rain":
                 return 'https://media.tenor.com/9pCiAd-nqIQAAAAC/bird-under-the-rain.gif';
             case "Snow":
-                return "//ellehansendotcom.files.wordpress.com/2021/09/2020holidaydog1x1_v03_eh-1.gif";
+                return "https://ellehansendotcom.files.wordpress.com/2021/09/2020holidaydog1x1_v03_eh-1.gif";
             case "Atmosphere":
                 return "https://media.tenor.com/RHiJpN34A3IAAAAC/foggy-fog.gif";
             case "Clear":
                 return "https://media.tenor.com/a-Aa1I_-MbYAAAAC/window-plants.gif";
             case "Clouds":
-                return "https://ellehansendotcom.files.wordpress.com/2021/09/thanksgiving2020_v04_eh.gif?w=500";
+                return "https://ellehansendotcom.files.wordpress.com/2021/09/thanksgiving2020_v04_eh.gif";
             default:
                 return "https://media.tenor.com/9pCiAd-nqIQAAAAC/bird-under-the-rain.gif";
         }
@@ -128,10 +128,12 @@ const Weather = () => {
             ) : (
                 <div className={styles.weatherWrapper}>
                      <div className={styles.weatherImg}>
-                        <img
+                        <Image
                             src={getWeatherImg()}
                             alt="Weather animation"
                             className={styles.weatherAnimation}
+                            width={500}
+                            height={500}
                         />
                     </div>
                     <div className={styles.weatherInfo}>
