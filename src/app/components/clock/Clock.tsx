@@ -1,5 +1,4 @@
 "use client";
-
 import React, { useEffect, useState } from 'react';
 import styles from './Clock.module.css';
 import { BsMoonFill, BsFillSunFill } from 'react-icons/bs';

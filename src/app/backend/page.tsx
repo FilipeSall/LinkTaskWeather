@@ -11,8 +11,6 @@ function index() {
         img:'robo3t'
     },
 ]
-
-
   return (
     <main>
       <Shortcut shortcuts={shortcuts} />

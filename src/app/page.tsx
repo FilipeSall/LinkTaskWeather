@@ -1,3 +1,4 @@
+"use client"
 import styles from './page.module.css'
 import Weather from './components/weather/Weather'
 import DatePainel from './components/datePainel/DatePainel'
