@@ -109,7 +109,7 @@ function DatePainel() {
                             </div>
                             <div className={styles.btnWrapper}>
                                 {todo.isCompleted === false ? <button className={styles.checkBtn} onClick={() => toggleCompleted(i)}>
-                                    <ImCheckboxUnchecked size={28} />
+                                    <ImCheckboxUnchecked size={24} />
                                 </button> : <button className={styles.unCheckBtn} onClick={() => toggleCompleted(i)}>
                                     <AiOutlineCheck size={32} />
                                 </button>}
