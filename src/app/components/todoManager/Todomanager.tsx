@@ -5,9 +5,7 @@ import  UseStore  from '../../Store';
 
 function Todomanager() {
 
-    const { addTodo } = UseStore();
-    const [value, setValue] = useState<string>('');
-    const [category, setCategory] = useState('Trabalho');
+    const { addTodo, value, setValue, category, setCategory, isCompleted } = UseStore();
 
     function handleChange(e: ChangeEvent<HTMLInputElement>) {
         setValue(e.target.value)
@@ -20,6 +18,7 @@ function Todomanager() {
             const newTodo = {
                 text: value,
                 icon: category,
+                isCompleted:isCompleted,
             };
             addTodo(newTodo);
             setValue('');

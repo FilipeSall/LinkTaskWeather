@@ -64,6 +64,7 @@
     display: flex;
     margin: 12px 0;
     font-weight: normal;
+    height: fit-content;
     align-items: center;
     gap: 8px;
     background-color: var(--white);
@@ -90,14 +91,12 @@
     font-size: 1.5rem;
 }
 
-.todo {
+.todo,.todoCompleted {
     display: flex;
     margin: 12px 0;
     font-weight: normal;
     align-items: center;
     gap: 8px;
-    background-color: var(--linen);
-  
     padding: 12px;
     border-radius: 8px;
     color: var(--grey);
@@ -105,6 +104,16 @@
     font-size: 1.5rem;
     justify-content: space-between;
     animation: slide-in 0.5s ease-in-out;
+    transition: background .3s ease;
+}
+.todo{
+    background-color: var(--linen);
+}
+
+.todoCompleted{
+    background-color: var(--green);
+    text-decoration: line-through;
+    color: grey;
 }
 
 .todoicon {
@@ -112,9 +121,14 @@
     font-size: 2rem;
 }
 
-.trashBtn {
-    background-color: var(--red);
-    color: var(--white);
+.btnWrapper{
+    display: flex;
+    width: 20%;
+    align-items: stretch;
+    justify-content: space-around;
+}
+
+.trashBtn, .checkBtn, .unCheckBtn{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -123,6 +137,21 @@
     height: 5vh;
     border: none;
     border-radius: 8px;
+}
+
+.unCheckBtn{
+    background-color: var(--green);
+    color: var(--white);
+}
+
+.trashBtn {
+    background-color: var(--red);
+    color: var(--white);
+}
+
+.checkBtn{
+    color: var(--grey);
+    background-color: var(--linen);
 }
 
 .todoIconTxt {

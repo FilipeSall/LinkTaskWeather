@@ -2,13 +2,15 @@
 
 import React, { useEffect, useState } from 'react';
 import styles from './Datepainel.module.css';
-import { AiOutlineCalendar } from 'react-icons/ai';
+import { AiOutlineCalendar, AiOutlineCheck } from 'react-icons/ai';
 import specialDates from './specialDates';
-import  UseStore  from '../../Store'
+import UseStore from '../../Store'
 import { FcTodoList } from "react-icons/fc";
 import { BsFillTrashFill } from "react-icons/bs";
 import { FaBriefcase, FaBook } from "react-icons/fa";
 import { GrGamepad } from "react-icons/gr";
+import { ImCheckboxUnchecked } from "react-icons/im";
+
 
 function DatePainel() {
 
@@ -16,7 +18,7 @@ function DatePainel() {
     const [date, setDate] = useState(new Date().toLocaleDateString('pt-BR'));
     const monthNum = new Date().getMonth() + 1;
     const dayNum = new Date().getDate();
-    const { todos, removeTodo } = UseStore();
+    const { todos, removeTodo, isCompleted, toggleCompleted } = UseStore();
 
     const daysOfWeek = [
         "Domingo",
@@ -88,23 +90,36 @@ function DatePainel() {
                     </div>
                 ) : (
                     todos.map((todo: any, i: any) => (
-                        <div key={i} className={styles.todo}>
+                        <div key={i} className={`${styles.todo} ${todo.isCompleted ? styles.todoCompleted : ''}`}>
                             <div className={styles.todoIconTxt}>
-                                {todo.icon === 'Trabalho' && <FaBriefcase fill='#974249' size={32} />}
-                                {todo.icon === 'Estudo' && <FaBook fill='#2F6690' size={32} />}
-                                {todo.icon === 'Lazer' && <GrGamepad fill='#39393A' size={32} />}
+                                {todo.isCompleted === false ? (
+                                    <>
+                                        {todo.icon === 'Trabalho' && <FaBriefcase fill='#974249' size={32} />}
+                                        {todo.icon === 'Estudo' && <FaBook fill='#2F6690' size={32} />}
+                                        {todo.icon === 'Lazer' && <GrGamepad fill='#39393A' size={32} />}
+                                    </>
+                                ) : (
+                                    <>
+                                        {todo.icon === 'Trabalho' && <FaBriefcase fill='grey' size={32} />}
+                                        {todo.icon === 'Estudo' && <FaBook fill='grey' size={32} />}
+                                        {todo.icon === 'Lazer' && <GrGamepad fill='grey' size={32} />}
+                                    </>
+                                )}
                                 {todo.text}
                             </div>
-                            <button
-                                className={styles.trashBtn}
-                                onClick={() => removeTodo(i)}
-                            >
-                                <BsFillTrashFill />
-                            </button>
+                            <div className={styles.btnWrapper}>
+                                {todo.isCompleted === false ? <button className={styles.checkBtn} onClick={() => toggleCompleted(i)}>
+                                    <ImCheckboxUnchecked size={28} />
+                                </button> : <button className={styles.unCheckBtn} onClick={() => toggleCompleted(i)}>
+                                    <AiOutlineCheck size={32} />
+                                </button>}
+                                <button className={styles.trashBtn} onClick={() => removeTodo(i)}>
+                                    <BsFillTrashFill size={24} />
+                                </button>
+                            </div>
                         </div>
                     ))
                 )}
-
             </div>
         </div>
 

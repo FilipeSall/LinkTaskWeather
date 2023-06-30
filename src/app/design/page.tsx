@@ -40,8 +40,7 @@ function index() {
     text:'Uma I.A que cria logos.',
     img:'looka',
   }
-]
-
+];
   return (
     <main>
       <Shortcut shortcuts={shortcuts} />
