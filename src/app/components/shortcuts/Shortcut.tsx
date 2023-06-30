@@ -40,6 +40,7 @@ function Shortcut({ shortcuts }: Props) {
               >
                 <a href={shortcut.href} target="_blank" className={`${styles.shortcut__container}`}>
                   <h1 className={hoverStates[i] ? styles.invisible : styles.shortcut_title}>{shortcut.title}</h1>
+                  <p className={hoverStates[i] ? styles.shortcut_textTitle : styles.invisible}>{shortcut.title}</p>
                   <p className={hoverStates[i] ? styles.shortcut_text : styles.invisible}>{shortcut.text}</p>
                 </a>
               </div>

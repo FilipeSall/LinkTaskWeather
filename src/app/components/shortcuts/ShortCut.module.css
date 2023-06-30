@@ -66,14 +66,18 @@
     display: none;
   }
   
-  .shortcut_text {
+  .shortcut_text, .shortcut_textTitle {
     animation: animeLeft .3s ease;
     color: var(--black);
     text-shadow: none;
     font-weight: 900;
     font-size: 1.2rem;
     font-family: 'montserrat';
+  }
 
+  .shortcut_textTitle{
+    font-size: 1.5rem;
+    font-weight: bolder;
   }
   
 
