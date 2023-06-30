@@ -90,23 +90,23 @@ const Weather = () => {
 
         switch (weatherCondition) {
             case "Thunderstorm":
-                return "https://media.tenor.com/B14wu9T3Dp8AAAAC/storm-staring.gif";
+              return "https://media.tenor.com/B14wu9T3Dp8AAAAC/storm-staring.gif";
             case "Drizzle":
-                return "https://media.tenor.com/xQu_Gj4VDckAAAAC/good-morning-morning.gif";
+              return "https://media.tenor.com/xQu_Gj4VDckAAAAC/good-morning-morning.gif";
             case "Rain":
-                return 'https://media.tenor.com/9pCiAd-nqIQAAAAC/bird-under-the-rain.gif';
+              return 'https://media.tenor.com/9pCiAd-nqIQAAAAC/bird-under-the-rain.gif';
             case "Snow":
-                return "https://ellehansendotcom.files.wordpress.com/2021/09/2020holidaydog1x1_v03_eh-1.gif";
+              return "https://ellehansendotcom.files.wordpress.com/2021/09/2020holidaydog1x1_v03_eh-1.gif";
             case "Atmosphere":
-                return "https://media.tenor.com/RHiJpN34A3IAAAAC/foggy-fog.gif";
+              return "https://media.tenor.com/RHiJpN34A3IAAAAC/foggy-fog.gif";
             case "Clear":
-                return "https://media.tenor.com/a-Aa1I_-MbYAAAAC/window-plants.gif";
+              return "https://media.tenor.com/a-Aa1I_-MbYAAAAC/window-plants.gif";
             case "Clouds":
-                return "https://ellehansendotcom.files.wordpress.com/2021/09/thanksgiving2020_v04_eh.gif";
+              return "https://ellehansendotcom.files.wordpress.com/2021/09/thanksgiving2020_v04_eh.gif?w=500";
             default:
-                return "https://media.tenor.com/9pCiAd-nqIQAAAAC/bird-under-the-rain.gif";
-        }
-    };
+              return "https://media.tenor.com/9pCiAd-nqIQAAAAC/bird-under-the-rain.gif";
+          }
+        };
 
     return (
         <div className={styles.container}>
