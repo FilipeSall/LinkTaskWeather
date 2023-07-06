@@ -13,7 +13,11 @@
     --orange: #FA9500;
     --green: #a7aa29;
     --papaya: #ebddc1;
-    --grey:#39393A;
+    --grey: #39393A;
+}
+
+html {
+    font-size: 12px;
 }
 
 * {
@@ -22,7 +26,6 @@
     box-sizing: border-box;
     font-family: 'roboto';
 }
-
 
 .roboto {
     font-family: 'Roboto';
@@ -36,7 +39,7 @@
     font-family: 'Open Sans';
 }
 
-a{
+a {
     text-decoration: none;
 }
 

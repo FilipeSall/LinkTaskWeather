@@ -1,9 +1,6 @@
 import Head from 'next/head'
 import './globals.css'
-import { Inter } from 'next/font/google'
 import Header from './components/header/Header'
-
-const inter = Inter({ subsets: ['latin'] })
 
 export default function RootLayout({
   children,
@@ -24,7 +21,7 @@ export default function RootLayout({
         <meta name="format-detection" content="telephone=no, date=no, email=no, address=no" />
         <title>Estudograma</title>
       </Head>
-      <body className={inter.className}>
+      <body>
         <Header />
         {children}
       </body>
