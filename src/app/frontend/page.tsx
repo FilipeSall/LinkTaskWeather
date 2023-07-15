@@ -28,6 +28,12 @@ function index() {
         text: 'Uma biblioteca popular para gerenciamento de rotas em aplicações web React',
         img:'router'
     },
+    {
+      title:'Real favicon',
+      href:'https://realfavicongenerator.net/',
+      text:'Crie seus ícones plataforma por plataforma e faça com que eles tenham uma ótima aparência em qualquer lugar.',
+      img:'realfavicon'
+    }
 ]
 
   return (

@@ -143,6 +143,10 @@
   background-image: url(../../../../public/shortcuts_imgs/looka.webp);
 }
 
+.realfavicon{
+  background-image: url(../../../../public/shortcuts_imgs/realfavicon.webp);
+}
+
 @media screen and (max-width:768px) {
     .shortcut__img-container{
        height: 30vh;
