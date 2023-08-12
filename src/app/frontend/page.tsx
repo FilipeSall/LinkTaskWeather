@@ -33,6 +33,12 @@ function index() {
       href:'https://realfavicongenerator.net/',
       text:'Crie seus ícones plataforma por plataforma e faça com que eles tenham uma ótima aparência em qualquer lugar.',
       img:'realfavicon'
+    },
+    {
+      title:'Framer motion',
+      href:'https://www.framer.com/motion/?utm_source=google&utm_medium=adwords&utm_campaign=TW-WW-All-GS-UA-Traffic-20190326-Brand.Bmm_&gad=1&gclid=Cj0KCQjwuNemBhCBARIsADp74QTQe_J90kgkCeGiAoEcbMBN8rx3PZImjcpqCF7BZrcZz2oDdBJoXgQaAtg0EALw_wcB',
+      text:'Uma dependência React para criar animações.',
+      img:'framermotion',
     }
 ]
 
