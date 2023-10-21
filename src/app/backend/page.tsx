@@ -10,6 +10,12 @@ function index() {
         text: 'Cria uma interface para o MongoDb',
         img:'robo3t'
     },
+    {
+      title: 'Atlas',
+      href: 'https://www.mongodb.com/cloud/atlas/register',
+      text: 'Cria um servidor mongoDb na nuvem.',
+      img:'atlas'
+  },
 ]
   return (
     <main>
