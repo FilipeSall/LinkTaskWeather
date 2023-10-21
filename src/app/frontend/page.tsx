@@ -39,7 +39,13 @@ function index() {
       href:'https://www.framer.com/motion/?utm_source=google&utm_medium=adwords&utm_campaign=TW-WW-All-GS-UA-Traffic-20190326-Brand.Bmm_&gad=1&gclid=Cj0KCQjwuNemBhCBARIsADp74QTQe_J90kgkCeGiAoEcbMBN8rx3PZImjcpqCF7BZrcZz2oDdBJoXgQaAtg0EALw_wcB',
       text:'Uma dependência React para criar animações.',
       img:'framermotion',
-    }
+    },
+       {
+      title:'Zustand',
+      href:'https://github.com/pmndrs/zustand',
+      text:'Uma dependência React para manipular estados globais.',
+      img:'zustand',
+    },
 ]
 
   return (
