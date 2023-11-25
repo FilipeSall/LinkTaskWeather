@@ -39,7 +39,13 @@ function index() {
     href:'https://looka.com/',
     text:'Uma I.A que cria logos.',
     img:'looka',
-  }
+  },
+  {
+    title:'Voice IA',
+    href:'https://elevenlabs.io/',
+    text:'Uma I.A que gera voz baseado em prompts.',
+    img:'voiceia'
+  },
 ];
   return (
     <main>

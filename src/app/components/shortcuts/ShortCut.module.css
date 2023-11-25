@@ -159,6 +159,10 @@
   background-image: url(../../../../public/shortcuts_imgs/atlas.webp);
 }
 
+.voiceia{
+  background-image: url(../../../../public/shortcuts_imgs/voiceia.webp);
+}
+
 @media screen and (max-width:768px) {
     .shortcut__img-container{
        height: 30vh;
