@@ -1,24 +1,26 @@
 "use client";
 import React, { useState, ChangeEvent } from 'react';
 import styles from './Todomanager.module.css';
-import  UseStore  from '../../Store';
+import UseStore from '../../Store';
 
 function Todomanager() {
 
     const { addTodo, value, setValue, category, setCategory, isCompleted } = UseStore();
+    const [error, setError] = useState(false);
 
     function handleChange(e: ChangeEvent<HTMLInputElement>) {
         setValue(e.target.value)
+        setError(false)
     }
 
     function handleClick() {
         if (value.length === 0) {
-            return;
+            setError(true)
         } else {
             const newTodo = {
                 text: value,
                 icon: category,
-                isCompleted:isCompleted,
+                isCompleted: isCompleted,
             };
             addTodo(newTodo);
             setValue('');
@@ -27,8 +29,8 @@ function Todomanager() {
 
     const handleCategoryChange = (e: ChangeEvent<HTMLSelectElement>) => {
         setCategory(e.target.value);
-      };
-      
+    };
+
     return (
         <div className={styles.container}>
             <header className={styles.header}>
@@ -43,6 +45,7 @@ function Todomanager() {
                 </select>
                 <button onClick={handleClick} className={styles.btn}>Enviar</button>
             </main>
+            {error && <p className={styles.errorMessage}>O campo nao pode estar vazio</p>}
         </div>
     )
 }
