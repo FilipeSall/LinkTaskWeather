@@ -1,12 +1,6 @@
 "use client";
 import { create } from 'zustand';
 
-interface Todos {
-  text: string,
-  icon: string,
-  isCompleted:boolean,
-}
-
 
 type StorePropsTypes = {
   value: string;

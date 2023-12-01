@@ -37,7 +37,12 @@ function Todomanager() {
                 <h1>Gerenciador de tarefas</h1>
             </header>
             <main className={styles.mainContainer}>
-                <input placeholder='O que pretende fazer hoje?' value={value} onChange={handleChange} className={styles.input} />
+                <input
+                    placeholder="O que pretende fazer hoje?"
+                    value={value}
+                    onChange={handleChange}
+                    className={`${styles.input} ${error ? styles.errorborder : ''}`}
+                />
                 <select className={styles.select} value={category} onChange={handleCategoryChange}>
                     <option value='Trabalho'>Trabalho</option>
                     <option value='Estudo'>Estudo</option>
@@ -45,7 +50,6 @@ function Todomanager() {
                 </select>
                 <button onClick={handleClick} className={styles.btn}>Enviar</button>
             </main>
-            {error && <p className={styles.errorMessage}>O campo nao pode estar vazio</p>}
         </div>
     )
 }
