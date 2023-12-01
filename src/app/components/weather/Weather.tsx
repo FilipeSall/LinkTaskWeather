@@ -20,7 +20,7 @@ interface WeatherData {
 }
 
 const Weather = () => {
-    const [city, setCity] = useState<string>("Brasília"); // Inicializa com "Brasília"
+    const [city, setCity] = useState<string>("Brasília"); 
     const [weatherData, setWeatherData] = useState<WeatherData | null>(null);
     const [loading, setLoading] = useState<boolean>(true);
     const [error, setError] = useState<boolean>(false);
