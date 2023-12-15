@@ -163,6 +163,23 @@
   background-image: url(../../../../public/shortcuts_imgs/voiceia.webp);
 }
 
+.capcut{
+  background-image: url(../../../../public/shortcuts_imgs/capcut.webp);
+}
+
+.runwayml{
+  background-image: url(../../../../public/shortcuts_imgs/runwayml.webp);
+}
+
+.crayon{
+  background-image: url(../../../../public/shortcuts_imgs/crayon.webp);
+}
+
+.leonardoai{
+  background-image: url(../../../../public/shortcuts_imgs/leonardoai.webp);
+}
+
+
 @media screen and (max-width:768px) {
     .shortcut__img-container{
        height: 30vh;
