@@ -63,15 +63,17 @@
 
   .invisible {
     display: none;
+    transition: 1s ease;
   }
   
   .shortcut_text, .shortcut_textTitle {
-    animation: animeLeft .3s ease;
+    animation: animeLeft 1s ease;
     color: var(--black);
     text-shadow: none;
     font-weight: 900;
     font-size: 1.2rem;
     font-family: 'montserrat';
+    
   }
 
   .shortcut_textTitle{
