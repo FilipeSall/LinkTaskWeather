@@ -18,7 +18,7 @@ interface ShortcutObject {
 
 interface Props {
   shortcuts: ShortcutObject[];
-  btns: FilterButton[];
+  btns?: FilterButton[];
 }
 
 function Shortcut({ shortcuts, btns }: Props) {
