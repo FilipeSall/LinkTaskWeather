@@ -7,6 +7,7 @@
     border-radius: 4px;
     transition: .3s ease;
     text-align: center;
+    transition: .5s ease-out;
 }
 
 .nav__container {
@@ -21,6 +22,7 @@
     gap: 8px;
     width: 100%;
     max-width: 100%;
+    flex-direction: column;
   }
   
   .links__nav_container {
@@ -49,6 +51,43 @@
     padding: 10px;
     width: 100%;
     transition: .3s ease;
+  }
+  
+  .filter__buttons {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    height: 5vh;
+    min-height: fit-content;
+    flex-wrap: wrap;
+    height: fit-content;
+  }
+  
+  .filter__buttons > button {
+    border: none;
+    width: 15%;
+    height: 4vh;
+    padding: 4px;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: var(--grey);
+    color: white;
+    font-family: 'Montserrat';
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+    font-size: 1rem;
+    margin: 12px;
+  }
+  
+  .filter__buttons > button:hover {
+    background-color: var(--lowBlack);
+  }
+
+
+  .filter__buttons > .active{
+    color: var(--orange);
+    font-weight: bold;
   }
 
   .shortcut__container:hover {
@@ -98,6 +137,16 @@
     .nav__container {
       height: 50%;
       justify-content: space-around;
+    }
+
+    .filter__buttons{
+      height: 15vh;
+      width: 99%;
+    }
+
+    .filter__buttons > button{
+      height: 15vh;
+      width: 20%;
     }
   
   }
