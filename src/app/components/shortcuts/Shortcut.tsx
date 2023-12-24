@@ -13,7 +13,7 @@ interface ShortcutObject {
   text: string;
   img: string;
   href: string;
-  type: string;
+  type?: string;
 }
 
 interface Props {
