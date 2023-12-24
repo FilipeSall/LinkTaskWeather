@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import styles from './ShortCut.module.css';
 
 interface FilterButton {
-  type: string;
+  type?: string;
   name: string;
   img: string;
 }
@@ -23,7 +23,7 @@ interface Props {
 
 function Shortcut({ shortcuts, btns }: Props) {
   const [hoverStates, setHoverStates] = useState<boolean[]>(Array(shortcuts.length).fill(false));
-  const [selectedType, setSelectedType] = useState<string | null>(null);
+  const [selectedType, setSelectedType] = useState<string | null | undefined>(null);
 
   function handleHover(index: number) {
     setHoverStates((prevStates) => {
