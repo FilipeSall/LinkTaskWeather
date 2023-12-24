@@ -1,5 +1,5 @@
 "use client";
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import styles from './ShortCut.module.css';
 
 interface FilterButton {
@@ -24,11 +24,6 @@ interface Props {
 function Shortcut({ shortcuts, btns }: Props) {
   const [hoverStates, setHoverStates] = useState<boolean[]>(Array(shortcuts.length).fill(false));
   const [selectedType, setSelectedType] = useState<string | null | undefined>(null);
-
-
-  useEffect(() => {
-    // Certifique-se de lidar com a mudança de selectedType, se necessário
-  }, [selectedType]);
 
   function handleHover(index: number) {
     setHoverStates((prevStates) => {
