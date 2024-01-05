@@ -96,13 +96,13 @@ const Weather = () => {
             case "Rain":
               return 'https://media.tenor.com/9pCiAd-nqIQAAAAC/bird-under-the-rain.gif';
             case "Snow":
-              return "https://ellehansendotcom.files.wordpress.com/2021/09/2020holidaydog1x1_v03_eh-1.gif";
+              return "https://tenor.com/pt/view/fox-snow-animation-snowing-sweet-gif-15760505";
             case "Atmosphere":
               return "https://media.tenor.com/RHiJpN34A3IAAAAC/foggy-fog.gif";
             case "Clear":
               return "https://media.tenor.com/a-Aa1I_-MbYAAAAC/window-plants.gif";
             case "Clouds":
-              return "https://ellehansendotcom.files.wordpress.com/2021/09/thanksgiving2020_v04_eh.gif?w=500";
+              return "https://media1.tenor.com/m/ICfPH7c1WmUAAAAd/clouds-cartoon.gif";
             default:
               return "https://media.tenor.com/9pCiAd-nqIQAAAAC/bird-under-the-rain.gif";
           }

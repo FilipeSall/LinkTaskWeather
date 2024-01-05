@@ -77,7 +77,7 @@ function index() {
     {
       title: 'Leonardo.AI',
       href: 'https://leonardo.ai/',
-      text: 'Uma I.A que gera imagens atraves de prompts complexas, porém, limitada.',
+      text: 'Uma I.A que gera imagens atraves de prompts complexas, porém, limitada com créditos.',
       img: 'leonardoai',
       type:'ia',
     },
